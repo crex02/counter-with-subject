@@ -1,6 +1,5 @@
-<p>count: {{counter}}</p>
+<p>count: {{data.counter|async}}</p>
 <div>
-    <button (click)="decrement()">-</button>
-    <button (click)="increment()">+</button>
-
+    <button (click)="data.decrement()">-</button>
+    <button (click)="data.increment()">+</button>
 </div>

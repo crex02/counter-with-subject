@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/services/data/data-service.service';
 
 @Component({
   selector: 'app-first',
@@ -6,11 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.scss']
 })
 export class FirstComponent {
-  counter = 0;
-  increment(){
-    this.counter++;
+
+  constructor(public data:DataService){
+
   }
-  decrement(){
-    this.counter--;
-  }
+
 }
